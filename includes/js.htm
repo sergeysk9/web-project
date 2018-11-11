@@ -1,0 +1,88 @@
+
+ $(document).ready(function(){
+    $(".param").keypress(function(event){
+        var inputValue = event.which;
+        // allow numbers only.
+        if(inputValue > 47 && inputValue < 58)  {
+            event.preventDefault();
+        }
+    });
+});
+
+
+
+ $(document).ready(function($){
+
+
+  $('body').on('keypress', function (e) {
+    console.log('I have been pressed', e);
+})
+
+});
+
+
+
+ var code = (e.keyCode ? e.keyCode : e.which);
+ if(code > 47 && code < 58) { //Enter keycode
+   e.preventDefault();
+
+ }
+
+
+$("form").bind("keypress", function (e) {
+    if (e.keyCode == 13) {
+        $("#btnSearch").attr('value');
+        //add more buttons here
+        return false;
+    }
+});
+
+
+$(".text").on('keypress', function(e){
+
+alert(e.keyCode);
+
+  if (e.keyCode  > 47 && e.keyCode < 58) {
+        return false;
+    }
+});
+
+
+
+<script type="text/javascript">
+    window.addEventListener('keydown', function(e) {
+        if (e.keyIdentifier == 'U+000A' || e.keyIdentifier == 'Enter' || e.keyCode == 13) {
+            if (e.target.nodeName == 'INPUT' && e.target.type == 'text') {
+                e.preventDefault();
+                return false;
+            }
+        }
+    }, true);
+</script>
+
+
+
+<input onkeydown="Check(event);" onkeyup="Check(event);"/>
+<script>
+function Check(e) {
+    var keyCode = (e.keyCode ? e.keyCode : e.which);
+    if (keyCode > 47 && keyCode < 58) {
+        e.preventDefault();
+    }
+}
+</script>
+
+
+document.querySelector("input").addEventListener("keypress", function (evt) {
+    if (evt.which < 48 || evt.which > 57)
+    {
+        evt.preventDefault();
+    }
+});
+
+document.querySelector(".sign").addEventListener("keypress", function (evt) {
+    if (evt.which < 48 || evt.which > 57)
+    {
+        evt.preventDefault();
+    }
+});
