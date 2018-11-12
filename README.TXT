@@ -20,7 +20,7 @@ CREATE TABLE `visitors` (
 ) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 
-Unzip responsive_website.zip in rwd folder and copy the folder in htdocs directory in xampp directory on your PC..
+Copy all files into the folder in htdocs directory in xampp directory on your PC..
 
 modify conn.php file in the includes directory. Enter your user, password and database.
 
