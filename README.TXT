@@ -20,7 +20,7 @@ CREATE TABLE `visitors` (
 ) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 
-Copy all files into the folder in htdocs directory in xampp directory on your PC..
+Copy all files into a folder in the htdocs directory in the xampp directory on your PC..
 
 modify conn.php file in the includes directory. Enter your user, password and database.
 
